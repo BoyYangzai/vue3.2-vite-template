@@ -8,7 +8,8 @@
     "lint": "eslint . --ext .ts,.vue --fix",
     "lint:prettier": "prettier {src,mock}/**/*.{html,vue,css,sass,scss,ts,md} --write",
     "preview": "vite preview",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "commit":"cz"
   },
   "dependencies": {
     "@vueuse/core": "^8.1.1",
@@ -24,6 +25,8 @@
     "@typescript-eslint/eslint-plugin": "^5.15.0",
     "@typescript-eslint/parser": "^5.15.0",
     "@vitejs/plugin-vue": "^2.2.0",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.11.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-vue": "^8.5.0",
@@ -41,5 +44,10 @@
     "*.{ts,vue}": [
       "npm run lint"
     ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
