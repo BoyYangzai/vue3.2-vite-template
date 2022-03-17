@@ -9,7 +9,7 @@
     "lint:prettier": "prettier {src,mock}/**/*.{html,vue,css,sass,scss,ts,md} --write",
     "preview": "vite preview",
     "prepare": "husky install",
-    "commit":"cz"
+    "commit": "cz"
   },
   "dependencies": {
     "@vueuse/core": "^8.1.1",
@@ -22,6 +22,8 @@
     "vue-router": "^4.0.14"
   },
   "devDependencies": {
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1",
     "@typescript-eslint/eslint-plugin": "^5.15.0",
     "@typescript-eslint/parser": "^5.15.0",
     "@vitejs/plugin-vue": "^2.2.0",
@@ -48,6 +50,12 @@
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "ng lint",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   }
 }
