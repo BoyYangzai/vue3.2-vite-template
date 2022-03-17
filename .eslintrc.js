@@ -9,7 +9,7 @@ module.exports = {
         // 一些拓展预设配置,通常是最佳实践
         'eslint:recommended',
         // https://eslint.bootcss.com/docs/rules/
-        'plugin:vue/vue3-strongly-recommended',
+        'plugin:vue/vue3-recommended',
         // "plugin:vue/essential",  vue2版本
         'plugin:@typescript-eslint/recommended',
         'plugin:prettier/recommended',

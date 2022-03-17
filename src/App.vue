@@ -1,7 +1,8 @@
 <template>
     <img alt="Vue logo" src="./assets/logo.png" />
-    <div>Yang工程化集成</div>
+    <div>Yang的工程化集成</div>
     <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+    <router-view></router-view>
 </template>
 <script setup lang="ts">
 // This starter template is using Vue 3 <script setup> SFCs
