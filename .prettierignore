@@ -1,0 +1,13 @@
+/dist/*
+.json
+env.d.ts
+.local
+.output.js
+/node_modules/**
+**/*.svg
+**/*.sh
+/public/*
+.md
+package.json
+.config.json
+.config.js
