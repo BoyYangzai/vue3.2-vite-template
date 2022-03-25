@@ -8,10 +8,10 @@ export default defineConfig({
     plugins: [
         vue(),
         AutoImport({
-            resolvers: [ElementPlusResolver()],
+            resolvers: [ElementPlusResolver()]
         }),
         Components({
-            resolvers: [ElementPlusResolver()],
-        }),
-    ],
+            resolvers: [ElementPlusResolver()]
+        })
+    ]
 });

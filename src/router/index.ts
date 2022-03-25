@@ -3,13 +3,13 @@ const routes: RouteRecordRaw[] = [
     {
         path: '/',
         name: 'login',
-        component: () => import('../components/LoginPage.vue'),
-    },
+        component: () => import('../components/LoginPage.vue')
+    }
 ];
 
 const router = createRouter({
     history: createWebHistory(),
-    routes,
+    routes
 });
 
 export default router;

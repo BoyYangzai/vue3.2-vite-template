@@ -1,8 +1,19 @@
 <template>
-    <div>Come on!</div>
+    <button
+        id="prettier-id"
+        class="testClass"
+    >
+        >Come on!
+    </button>
 </template>
-<script setup lang="ts"></script>
+<script
+    setup
+    lang="ts"
+></script>
 <style scoped>
+.testClass {
+    color: red;
+}
 a {
     color: #42b983;
 }

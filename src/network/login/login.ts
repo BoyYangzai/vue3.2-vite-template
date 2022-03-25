@@ -28,25 +28,25 @@ request.interceptors.response.use(
             if (res.data.code == 200) {
                 ElMessage.success({
                     message: res.data.message,
-                    center: true,
+                    center: true
                 });
                 return res;
             } else if (res.data.code == 1003) {
                 ElMessage.error({
                     message: res.data.message,
-                    center: true,
+                    center: true
                 });
                 return;
             } else if (res.data.code == 1002) {
                 ElMessage({
                     message: res.data.message,
-                    center: true,
+                    center: true
                 });
                 return;
             } else if (res.data.code == 1001) {
                 ElMessage({
                     message: res.data.message,
-                    center: true,
+                    center: true
                 });
                 return;
             }
@@ -54,14 +54,14 @@ request.interceptors.response.use(
             console.log('error');
             ElMessage.error({
                 message: res.data.message,
-                center: true,
+                center: true
             });
         }
     },
     (err: any) => {
         ElMessage.error({
             message: '请检查网络设置',
-            center: true,
+            center: true
         });
         return;
     }

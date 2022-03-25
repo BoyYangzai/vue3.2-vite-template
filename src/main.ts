@@ -34,5 +34,5 @@ router.beforeEach((to, from, next) => {
 console.log('woaini');
 const p = {
     name: 'Yang',
-    age: '18',
+    age: '18'
 };

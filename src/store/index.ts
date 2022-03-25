@@ -19,12 +19,12 @@ const userInfo: userInfo = {
     description: '',
     follower: 0,
     fan: 0,
-    isFollow: undefined,
+    isFollow: undefined
 };
 export const useStore = defineStore('main', {
     state: () => {
         return {
-            userInfo,
+            userInfo
         };
     },
     getters: {},
@@ -38,6 +38,6 @@ export const useStore = defineStore('main', {
                 this.userInfo.description = res.data.data.userInfo.description;
                 this.userInfo.fan = res.data.data.userInfo.fan;
             });
-        },
-    },
+        }
+    }
 });
