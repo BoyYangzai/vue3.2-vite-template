@@ -30,13 +30,21 @@ export const useStore = defineStore('main', {
     getters: {},
     actions: {
         getUserInfo(studentId: string) {
-            getrequest(`user/info/${studentId}`).then((res: any) => {
-                this.userInfo.studentId = res.data.data.userInfo.studentId;
-                this.userInfo.nickname = res.data.data.userInfo.nickname;
-                this.userInfo.avatar = res.data.data.userInfo.avatar;
-                this.userInfo.sex = res.data.data.userInfo.sex;
-                this.userInfo.description = res.data.data.userInfo.description;
-                this.userInfo.fan = res.data.data.userInfo.fan;
+            getrequest(
+                `user/info/${studentId}`
+            ).then((res: any) => {
+                this.userInfo.studentId =
+                    res.data.data.userInfo.studentId;
+                this.userInfo.nickname =
+                    res.data.data.userInfo.nickname;
+                this.userInfo.avatar =
+                    res.data.data.userInfo.avatar;
+                this.userInfo.sex =
+                    res.data.data.userInfo.sex;
+                this.userInfo.description =
+                    res.data.data.userInfo.description;
+                this.userInfo.fan =
+                    res.data.data.userInfo.fan;
             });
         }
     }

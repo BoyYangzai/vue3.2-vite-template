@@ -1,10 +1,10 @@
 // prettier.config.js or .prettierrc.js
 module.exports = {
-    printWidth: 100, // 超过最大值换行
+    printWidth: 50, // 多次测试发现50比较合理，超过最大值换行
     tabWidth: 4, // 缩进字节数
     useTabs: false, // 缩进不使用tab，使用空格
     semi: true, // 句尾添加分号
-    singleAttributePerLine: true, // Vue单个属性换行
+    singleAttributePerLine: false, // Vue单个属性换行
     singleQuote: true, // 使用单引号代替双引号
     proseWrap: 'preserve', // 默认值。因为使用了一些折行敏感型的渲染器（如GitHub comment）而按照markdown文本样式进行折行
     arrowParens: 'avoid', //  (x) => {} 箭头函数参数只有一个时是否要有小括号。avoid：省略括号

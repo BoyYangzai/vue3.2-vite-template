@@ -1,18 +1,13 @@
 <template>
-    <button
+    <div
         id="prettier-id"
-        class="testClass"
-    >
-        >Come on!
-    </button>
+        class="testClass12312313"
+    ></div>
 </template>
-<script
-    setup
-    lang="ts"
-></script>
+<script setup lang="ts"></script>
 <style scoped>
 .testClass {
-    color: red;
+    color: rgba(255, 123, 0, 0.767);
 }
 a {
     color: #42b983;

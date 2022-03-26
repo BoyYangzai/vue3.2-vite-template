@@ -10,17 +10,30 @@ interface postBody {
 export function getrequest(param: string) {
     return request.get(param);
 }
-export function postrequest(param: string, body: postBody) {
+export function postrequest(
+    param: string,
+    body: postBody
+) {
     return request.post(param, body);
 }
-request.interceptors.request.use((config: any) => {
-    if (window.localStorage.getItem('token') != 'null') {
-        config!.headers!.Authorization = `Bearer ${window.localStorage.getItem('token')}`;
-    }
-    console.log(config!.headers!.Authorization);
+request.interceptors.request.use(
+    (config: any) => {
+        if (
+            window.localStorage.getItem(
+                'token'
+            ) != 'null'
+        ) {
+            config!.headers!.Authorization = `Bearer ${window.localStorage.getItem(
+                'token'
+            )}`;
+        }
+        console.log(
+            config!.headers!.Authorization
+        );
 
-    return config;
-});
+        return config;
+    }
+);
 request.interceptors.response.use(
     (res: any) => {
         if (res.status == 200) {

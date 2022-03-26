@@ -1,9 +1,14 @@
-import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
+import {
+    createRouter,
+    createWebHistory,
+    RouteRecordRaw
+} from 'vue-router';
 const routes: RouteRecordRaw[] = [
     {
         path: '/',
         name: 'login',
-        component: () => import('../components/LoginPage.vue')
+        component: () =>
+            import('../components/LoginPage.vue')
     }
 ];
 
