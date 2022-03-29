@@ -12,6 +12,12 @@
     <router-view></router-view>
 </template>
 <script setup lang="ts">
+import { yangMessage } from './components';
+yangMessage({
+    message: 'Yang,加油',
+    type: 'success',
+    closeTimeout: 3000
+});
 let b = {
     name: 'yang',
     test: 'qaq'

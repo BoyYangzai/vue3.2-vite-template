@@ -4,9 +4,11 @@
 
 declare module 'vue' {
     export interface GlobalComponents {
+        ElIcon: typeof import('element-plus/es')['ElIcon'];
         HelloWorld: typeof import('./src/components/HelloWorld.vue')['default'];
         LoginPage: typeof import('./src/components/LoginPage.vue')['default'];
         MainPage: typeof import('./src/components/MainPage.vue')['default'];
+        Message: typeof import('./src/components/Message/Message.vue')['default'];
     }
 }
 

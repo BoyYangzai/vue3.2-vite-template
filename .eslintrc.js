@@ -36,6 +36,7 @@ module.exports = {
         'prettier/prettier': 'error',
         'arrow-body-style': 'off',
         'prefer-arrow-callback': 'off',
-        '@typescript-eslint/no-var-requires': 0
+        '@typescript-eslint/no-var-requires': 0,
+        '@typescript-eslint/no-empty-function': 1,  //空函数，definePorps时会用到
     },
 };
