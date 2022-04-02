@@ -1,10 +1,9 @@
 {
-  "name": "myviteproject",
+  "name": "yang-vitecli",
   "private": true,
-  "version": "0.0.0",
   "scripts": {
     "dev": "vite --open",
-    "build": "vue-tsc --noEmit && vite build",
+    "build": "vite build",
     "lint": "eslint . --ext .ts,.vue --fix",
     "lint:prettier": "prettier {src,mock}/**/*.{html,vue,css,sass,scss,ts,md} --write",
     "preview": "vite preview",
@@ -57,5 +56,20 @@
       "pre-commit": "ng lint",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
-  }
+  },
+  "description": "A Good ![https://img.shields.io/badge/Vue3.2%2BVite%2BTs-%E6%9E%81%E8%87%B4%E7%9A%84%E4%B8%9D%E6%BB%91%E4%BD%93%E9%AA%8C-success] Template \r - Yang的工程化初始\r # Features\r - 👑 Vue3.2全家桶 \r - ⚡️ Vite\r - 💎 TypeScript\r - 🚥 ESlint\r - 🌞 Prettier\r - 🎁 Lint_staged\r - 🚨 Commitlint\r - 🎷 husky\r - 🔨 Commitizen",
+  "main": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BoyYangzai/vue3.2-vite-template.git"
+  },
+  "keywords": [
+    "Vue3.2+Vite+TS+Eslingt+Prettier+Husky"
+  ],
+  "author": "Yang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BoyYangzai/vue3.2-vite-template/issues"
+  },
+  "homepage": "https://github.com/BoyYangzai/vue3.2-vite-template#readme"
 }
