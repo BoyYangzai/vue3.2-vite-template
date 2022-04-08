@@ -12,7 +12,8 @@
     <router-view></router-view>
 </template>
 <script setup lang="ts">
-import { yangMessage } from './components';
+import { yangMessage } from './components/Message/Message';
+
 yangMessage({
     message: 'Yang,加油',
     type: 'success',
@@ -23,18 +24,20 @@ let b = {
     test: 'qaq'
 };
 </script>
+
 <style>
 #app {
+    margin-top: 60px;
     font-family: Avenir, Helvetica, Arial,
         sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
-    margin-top: 60px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
+
 .f {
     font-size: 2vw;
-    color: rgba(255, 157, 0, 0.808);
+    color: rgb(255 157 0 / 80.8%);
 }
 </style>
