@@ -38,5 +38,6 @@ module.exports = {
         'prefer-arrow-callback': 'off',
         '@typescript-eslint/no-var-requires': 0,
         '@typescript-eslint/no-empty-function': 1,  //空函数，definePorps时会用到
+        'vue/multi-word-component-names': 1
     },
 };
