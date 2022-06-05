@@ -4,11 +4,19 @@
 
 declare module 'vue' {
     export interface GlobalComponents {
+        ElButton: typeof import('element-plus/es')['ElButton'];
+        ElForm: typeof import('element-plus/es')['ElForm'];
+        ElFormItem: typeof import('element-plus/es')['ElFormItem'];
         ElIcon: typeof import('element-plus/es')['ElIcon'];
+        ElInput: typeof import('element-plus/es')['ElInput'];
+        ElRadio: typeof import('element-plus/es')['ElRadio'];
+        ElRadioButton: typeof import('element-plus/es')['ElRadioButton'];
+        ElRadioGroup: typeof import('element-plus/es')['ElRadioGroup'];
         HelloWorld: typeof import('./src/components/HelloWorld.vue')['default'];
         LoginPage: typeof import('./src/components/LoginPage.vue')['default'];
         MainPage: typeof import('./src/components/MainPage.vue')['default'];
         Message: typeof import('./src/components/Message/Message.vue')['default'];
+        ToDo: typeof import('./src/components/ToDo.vue')['default'];
     }
 }
 
